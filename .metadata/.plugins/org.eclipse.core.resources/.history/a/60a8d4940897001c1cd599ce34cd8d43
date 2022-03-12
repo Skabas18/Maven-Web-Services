@@ -1,0 +1,12 @@
+package com.cmc.cualquiera;
+
+import com.cmc.rest.entidades.Persona;
+
+public class PersonaRest {
+	public Persona modificar(Persona p){
+		System.out.println(p);
+		Persona s;
+		s = ServicioPersonas.actualizar(p);
+		return null;
+	}
+}

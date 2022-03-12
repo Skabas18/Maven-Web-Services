@@ -1,0 +1,16 @@
+package com.cmc.rest.commons;
+
+import java.util.Date;
+
+public class DateUtil {
+	public static Date convertir(Date f){
+		// Using format() method for conversion
+		SimpleDateFormat SDFormat
+        = new SimpleDateFormat();
+		String curr_date = SDFormat.format(cal.getTime());
+        System.out.println("Formatted Date: "
+                           + curr_date);
+		return f;
+		
+	}
+}

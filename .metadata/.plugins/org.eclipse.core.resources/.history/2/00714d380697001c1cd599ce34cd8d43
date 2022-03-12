@@ -1,0 +1,15 @@
+package com.cmc.rest.test;
+
+import com.cmc.rest.entidades.Persona;
+
+public class TestActualizar {
+
+	public static void main(String[] args) {
+		Persona p= new Persona("122345","sebastian","cabal", 0);
+		System.out.println("Persona original");
+		System.out.println(p);
+		
+		Persona pe;
+	}
+
+}

@@ -1,0 +1,29 @@
+package com.cmc.rest.servicios;
+
+import com.cmc.rest.commons.ValidationException;
+import com.cmc.rest.entidades.Persona;
+
+public class ServicioPersonas {
+	public static Persona actualizar(Persona p) throws ValidationException{
+		if(p.getNombre().length()<=3){
+			throw new ValidationException("Nombre muy corto");
+		}else{
+			p.setNombre(p.getNombre().toUpperCase());
+			p.setApellido(p.getApellido().toUpperCase());
+		}if(p.getApellido().length()<=3){
+			throw new ValidationException("Apellido muy corto ");
+		}else{
+			p.setNombre(p.getNombre().toUpperCase());
+			p.setApellido(p.getApellido().toUpperCase());
+		}
+		 return p;
+	}
+	public static Persona buscarPorCedula(String s){
+		Persona p = new Persona();
+		ManejadorArchivos a= new ManejadorArchivos(s);
+		if(p.getCedula().equals(s)){
+			
+		}
+		return p;
+	}
+}
